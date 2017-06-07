@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>JavaScript</title>
+<script type = "text/javascript">
+	function handlerClick(element){
+		var i=1; i<1000; i += 2;
+		 if(i) {
+		 element.width = 500;
+      }
+	}
+	function handlerClick1(element){
+		 var i=0; i<1000; i += 2;
+		 if(i) {
+		 element.width = 100;
+      }
+	}
+	 var i = 1;
+	function Click(element){
+	    if (i==0){
+		element.width= 500;
+		   i = 1;
+		}
+	    else if(i==1){
+		element.width= 100;
+		   i = 0;
+		}
+	}
+
+
+</script>
+</head>
+<body>
+	<img src ="aray.4.jpg" alt = "" width="100" onmouseover = "handlerClick(this)" onmouseout = "handlerClick1(this)">
+	<img src ="aray.4.jpg" alt = "" width="100" id="image" onclick = "Click(this)">
+</body>
+</html>
+<!---- 
+Выведите на страницу через тег <img /> любое изображение.
+Поставьте атрибут width со значением 100.
+При наведении курсора на это изображение увеличьте width у изображения до 500.
+При снятии курсора с изображения сделайте width обратно 100.
+Сделайте аналогичную задачу, но с использованием клика. При первом клике увеличивайте, при втором клике уменьшайте, при третьем увеличивайте, при четвёртом уменьшайте и так далее.
+----!>
